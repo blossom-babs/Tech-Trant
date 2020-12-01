@@ -1,0 +1,41 @@
+.footer {
+  background: $secondaryColor;
+  color: $offBlack;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+
+  &__content {
+    @include pageLayout;
+  }
+
+  &__question {
+    font-size: 2.5em;
+  }
+
+  &__mail {
+    padding: 1rem 0;
+  }
+
+  &__website {
+    a {
+      text-transform: uppercase;
+      color: $offWhite;
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+    padding: 1rem 0;
+
+    @media screen and (min-width: $width) {
+      text-align: center;
+    }
+  }
+
+  &__grid {
+    @media screen and (min-width: $width) {
+      @include flexLayout;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

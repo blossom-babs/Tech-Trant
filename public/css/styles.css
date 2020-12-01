@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap");
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 0;
+  font-size: 18px;
+  font-family: "Lora", serif;
+}
+
+.nav__name--h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: ce;
+}
+
+.nav__links {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav__links {
+    background: #e58e26;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    transform: translateX(1000px);
+    transition: 1s ease-out;
+  }
+}
+
+.nav__item {
+  display: inline-block;
+  padding-right: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .nav__item {
+    display: block;
+    text-align: center;
+    padding: 3rem 0;
+    transition: 3s ease-in-out;
+  }
+}
+
+.nav__item a {
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .nav__item a {
+    color: #f8f8f8;
+    transition: 3s ease-in-out;
+  }
+}
+
+.nav__item a:hover {
+  text-decoration: underline wavy #e58e26;
+}
+
+@media screen and (max-width: 600px) {
+  .nav__item a:hover {
+    text-decoration: underline wavy #333;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger__first-line, .hamburger__second-line, .hamburger__third-line {
+  width: 30px;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #333;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.fl-active {
+  transform: rotate(300deg);
+}
+
+.sl-active {
+  display: none;
+}
+
+.tl-active {
+  transform: rotateZ(-150deg);
+}
+
+.active {
+  transform: translateX(0);
+  transition: 1s ease-in-out;
+}
+
+.headline {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-size: 18px;
+  font-family: "Lora", serif;
+}
+
+.headline__label {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #e58e26;
+  text-decoration-style: wavy;
+}
+
+.headline__label h1 {
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}
+
+.headline__grid {
+  padding-top: 1.5em;
+}
+
+@media screen and (min-width: 800px) {
+  .headline__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+}
+
+.headline__image {
+  border: 2px solid #e58e26;
+  width: 90%;
+}
+
+.headline__news--content {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .headline__news--content {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .posts {
+    margin: 0 auto;
+    width: 90%;
+    padding: 2rem 0;
+    font-size: 18px;
+    font-family: "Lora", serif;
+  }
+}
+
+.posts__image {
+  border: 2px solid #e58e26;
+  width: 90%;
+}
+
+.posts__content--p {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .posts__content--p {
+    padding-top: 1rem;
+  }
+}
+
+.posts__article {
+  padding: 2rem 0;
+}
+
+.footer {
+  background: #e58e26;
+  color: #333;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.footer__content {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 0;
+  font-size: 18px;
+  font-family: "Lora", serif;
+}
+
+.footer__question {
+  font-size: 2.5em;
+}
+
+.footer__mail {
+  padding: 1rem 0;
+}
+
+.footer__website a {
+  text-transform: uppercase;
+  color: #f8f8f8;
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.body {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 0;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured,
+.external {
+  width: 25%;
+  border: 1px solid #e58e26;
+  border-left: 0;
+  height: fit-content;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 900px) {
+  .featured,
+  .external {
+    display: none;
+  }
+}
+
+.featured__header,
+.external__header {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #e58e26;
+  text-decoration-style: wavy;
+  font-family: "Nunito", sans-serif;
+}
+
+.featured__list,
+.external__list {
+  padding-top: 2rem;
+}
+
+.featured__item,
+.external__item {
+  padding-bottom: .5rem;
+}
+
+.featured h3,
+.external h3 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 900px) {
+  .posts {
+    width: 40%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.colored {
+  color: #f6b93b;
+}
+
+.news-div__image {
+  border: 2px solid #e58e26;
+  width: 90%;
+}
+
+.news-div__content--p {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .news-div__content--p {
+    padding-top: 1rem;
+  }
+}
+
+.tech-news {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 0;
+  font-size: 18px;
+  font-family: "Lora", serif;
+}
+
+.tech-news__label {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #e58e26;
+  text-decoration-style: wavy;
+}
+
+.tech-news__label--h1 {
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}
+
+.tech-news__grid {
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  .tech-news__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,25 @@
+.posts {
+  @media screen and (max-width:900px) {
+    @include pageLayout;
+  }
+
+  &__image {
+    border: $darkOutline;
+    width: 90%;
+  }
+
+  &__content {
+
+   &--p {
+     line-height: $lineHeight;
+
+     @media screen and (max-width:$width) {
+       padding-top: 1rem;
+     }
+   }
+ }
+
+  &__article {
+    padding: 2rem 0;
+  }
+}

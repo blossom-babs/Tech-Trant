@@ -1,0 +1,28 @@
+$mainColor: #f6b93b;
+$secondaryColor:#e58e26;
+
+$offWhite: #f8f8f8;
+$white: #ffffff;
+$black: #000000;
+$offBlack: #333;
+
+$width: 800px;
+$darkOutline: 2px solid $secondaryColor;
+$lineHeight: 2rem;
+
+@mixin pageLayout {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 0;
+
+  font-size: 18px;
+  font-family: $secondaryFont;
+}
+
+@mixin gridLayout {
+  display: grid;
+}
+
+@mixin flexLayout {
+  display: flex;
+}

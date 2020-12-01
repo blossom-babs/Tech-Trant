@@ -1,0 +1,59 @@
+// a unique width of 900px
+
+.body {
+  font-family: $secondaryFont;
+  font-size: 18px;
+
+  @include pageLayout;
+
+  @include flexLayout;
+  justify-content: space-between;
+}
+
+.featured,
+.external {
+
+  width: 25%;
+  border: 1px solid $secondaryColor;
+  border-left: 0;
+  height: fit-content;
+  padding: 2rem 0;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+
+  &__header {
+
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: $secondaryColor;
+    text-decoration-style: wavy;
+    font-family: $headerFont;
+  }
+
+  &__list {
+    padding-top: 2rem;
+  }
+
+  &__item {
+    padding-bottom: .5rem;
+  }
+
+  h3 {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+
+.posts {
+  @media screen and (min-width: 900px) {
+    width: 40%;
+  }
+
+}
+
+ul {
+  list-style-type: none;
+}

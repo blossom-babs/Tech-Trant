@@ -1,0 +1,57 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png") //background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png");
+
+}
+
+.colored {
+  color: $mainColor;
+}
+
+.news-div {
+  &__image {
+    border: $darkOutline;
+    width: 90%;
+  }
+
+  &__content {
+
+    &--p {
+      line-height: $lineHeight;
+
+      @media screen and (max-width:$width) {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+
+.tech-news {
+  @include pageLayout;
+
+  &__label {
+
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: $secondaryColor;
+    text-decoration-style: wavy;
+
+    &--h1 {
+      font-weight: 500;
+      font-family: $headerFont;
+    }
+  }
+
+  &__grid {
+    padding: 2rem 0;
+
+    @media screen and (min-width:$width) {
+      @include gridLayout;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

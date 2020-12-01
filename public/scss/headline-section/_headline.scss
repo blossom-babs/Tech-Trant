@@ -1,0 +1,48 @@
+.headline {
+  //@include pageLayout;
+
+  width: 70%;
+  margin: 0 auto;
+
+  padding: 2rem 0;
+  font-size: 18px;
+  font-family: $secondaryFont;
+
+  &__label {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: $secondaryColor;
+    text-decoration-style: wavy;
+
+    h1 {
+      font-weight: 500;
+      font-family: $headerFont;
+    }
+  }
+
+  &__grid {
+    padding-top: 1.5em;
+
+    @media screen and (min-width: $width) {
+      @include gridLayout;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-around;
+
+    }
+  }
+
+  &__image {
+    border: $darkOutline;
+    width: 90%;
+  }
+
+  &__news {
+    &--content {
+      line-height: $lineHeight;
+
+      @media screen and (max-width:$width) {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
